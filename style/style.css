@@ -71,3 +71,33 @@ ul>li {
 .span-gap {
     padding: 15px;
 }
+
+
+
+/* media query styles here */
+/* for mobile  x-small*/
+@media screen and (max-width:576px){
+    nav,
+    .nav-ul
+    {
+        flex-direction: column;
+    }
+    nav{
+        height: 13rem;
+    }
+    .nav-ul{
+        gap: 1rem;
+    }
+}
+
+/* for tablet large */
+@media screen and (min-width:576px) and (max-width:992px){
+    nav,
+    .nav-ul
+    {
+        flex-direction: column;
+    }
+    nav{
+        height: 15rem;
+    }
+}
