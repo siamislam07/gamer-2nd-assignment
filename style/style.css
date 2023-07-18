@@ -4,10 +4,70 @@
 * {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 :root {
-    --primary-color:red;
-    
+    --primary-color: red;
+
 }
 
+/* header nav bar */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7rem;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.nav-h1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.nav-g {
+    color: #FF42A5;
+}
+
+.nav-about {
+    display: flex;
+}
+
+.nav-ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+}
+
+ul>li {
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.last-li {
+    border-radius: 5px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 5px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.fa-youtube,
+.fa-tiktok {
+    width: 10px;
+    font-size: 25px;
+}
+
+.span-gap {
+    padding: 15px;
+}
