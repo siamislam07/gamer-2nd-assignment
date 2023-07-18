@@ -25,7 +25,10 @@ body {
     background-color: #FF42A5;
     border-radius: 48px;
     border: none;
-    
+}
+.primary-btn:hover{
+    transition: 0.5s;
+    box-shadow: 3px 3px 3px gray;
 }
 
 /* header nav bar */
@@ -119,6 +122,45 @@ ul>li {
 .banner-right-container > img{
     width: 100%;
 }
+/* main section  */
+/* online section */
+.online-title-container{
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+.online-h3{
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 700;
+}
+.funny-video{
+    color: #F948B2;
+}
+.online-p{
+    margin-top: 12px;
+    color: #534C64;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.online-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.game{
+    width: 251px;
+}
+.game-container > p{
+    margin-top: 0.5rem;
+    color: #534C64;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
 
 /* media query styles here */
 /* for mobile  x-small*/
@@ -126,13 +168,16 @@ ul>li {
 
     nav,
     .nav-ul,
-    .banner-section
+    .banner-section,
+    .online-container
     {
         flex-direction: column;
+        align-items: center;
     }
 
     nav {
         height: 13rem;
+        margin-bottom: 3rem;
     }
 
     .nav-ul {
@@ -149,6 +194,12 @@ ul>li {
         width: 190%;
         text-align: center;
     }
+    .banner-right-container > img{
+        margin-top: 2rem;
+    }
+    .online-title-container{
+        flex-direction: row;
+    }
 }
 
 /* for tablet large */
@@ -161,5 +212,8 @@ ul>li {
 
     nav {
         height: 15rem;
+    }
+    .game{
+        width: 160px;
     }
 }
