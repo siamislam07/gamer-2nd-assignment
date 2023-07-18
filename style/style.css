@@ -8,9 +8,24 @@
     padding: 0px;
 }
 
-:root {
-    --primary-color: red;
-
+body {
+    margin: 0px 130px;
+}
+.primary-p-style{
+    color: #534C64;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.primary-btn{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 20px 40px;
+    background-color: #FF42A5;
+    border-radius: 48px;
+    border: none;
+    
 }
 
 /* header nav bar */
@@ -22,6 +37,7 @@ nav {
     height: 7rem;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    margin: 0px -8rem;
 }
 
 .nav-h1 {
@@ -72,32 +88,78 @@ ul>li {
     padding: 15px;
 }
 
+/* banner section */
 
+.banner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28%;
+    background-image: url(../images/banner-back.png);
+}
+
+
+.banner-h2-1 {
+    color: #0B0223;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.banner-h2-2 {
+    font-size: 85px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-green{
+    background-color: #4EC5F7;
+}
+.banner-right-container > img{
+    width: 100%;
+}
 
 /* media query styles here */
 /* for mobile  x-small*/
-@media screen and (max-width:576px){
+@media screen and (max-width:576px) {
+
     nav,
-    .nav-ul
+    .nav-ul,
+    .banner-section
     {
         flex-direction: column;
     }
-    nav{
+
+    nav {
         height: 13rem;
     }
-    .nav-ul{
+
+    .nav-ul {
         gap: 1rem;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+    }
+    body{
+        width: 50%;
+    }
+    .banner-left-container{
+        margin-top: 50px;
+        width: 190%;
+        text-align: center;
     }
 }
 
 /* for tablet large */
-@media screen and (min-width:576px) and (max-width:992px){
+@media screen and (min-width:576px) and (max-width:992px) {
+
     nav,
-    .nav-ul
-    {
+    .nav-ul {
         flex-direction: column;
     }
-    nav{
+
+    nav {
         height: 15rem;
     }
 }
