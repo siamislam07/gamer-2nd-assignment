@@ -160,6 +160,40 @@ ul>li {
     font-weight: 500;
     line-height: 150%;
 }
+/* overlay style */
+.game-container{
+    position: relative;
+    /* overflow: hidden; */
+    display: inline-block;
+    /* margin: 10px; */
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 84%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    gap: 10px;
+}
+.game-container:hover .overlay{
+    opacity: 1;
+}
+.play-icon{
+    color: #fff;
+    font-size: 40px;
+    border-radius: 10px solid #fff;
+}
+.overlay p{
+    color: #FF42A5;
+    font-size: 20px;
+}
 /* instant section */
 .instant-section{
     margin-top: 100px;
